@@ -1,17 +1,21 @@
-var rafa = { nome: "ABC", vitorias: 2, empates: 1, derrotas: 1, pontos: 0 };
-var paulo = { nome: "DEF", vitorias: 1, empates: 1, derrotas: 2, pontos: 0 };
-var gui = { nome: "GHI", vitorias: 1, empates: 1, derrotas: 2, pontos: 0 };
+var jog1 = { nome: "Jogador 1", vitorias: 0, empates: 0, derrotas: 0, pontos: 0 };
+var jog2 = { nome: "Jogador 2", vitorias: 0, empates: 0, derrotas: 0, pontos: 0 };
+var jog3 = { nome: "Jogador 3", vitorias: 0, empates: 0, derrotas: 0, pontos: 0 };
+var jog4 = { nome: "Jogador 4", vitorias: 0, empates: 0, derrotas: 0, pontos: 0 };
+var jog5 = { nome: "Jogador 5", vitorias: 0, empates: 0, derrotas: 0, pontos: 0 };
 
 function calculaPontos(jogador) {
   var pontos = jogador.vitorias * 3 + jogador.empates;
   return pontos;
 }
 
-rafa.pontos = calculaPontos(rafa);
-paulo.pontos = calculaPontos(paulo);
-gui.pontos = calculaPontos(gui);
+jog1.pontos = calculaPontos(jog1);
+jog2.pontos = calculaPontos(jog2);
+jog3.pontos = calculaPontos(jog3);
+jog4.pontos = calculaPontos(jog4);
+jog5.pontos = calculaPontos(jog5);
 
-var jogadores = [rafa, paulo, gui];
+var jogadores = [jog1, jog2, jog3, jog4, jog5];
 
 function exibeJogadoresNaTela(jogadores) {
   var elemento = "";
